@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+<link rel="stylesheet" href="{% static 'css/base.css'%}">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="todos:todos.index">Home</a></li>
+          <li><a href="todos:todos.create">add todos</a></li>
+         
+        </ul>
+      </nav>
+
+      <main>
+        {% block mainContent %}
+        {% endblock mainContent %}
+      </main>
+    <h1>Welcome to My First Project!</h1>
+    
+   
+<img src="static\images\img1.jpg" alt="center">
+
+</body>
+</html>
